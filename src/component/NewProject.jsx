@@ -11,7 +11,13 @@ const NewProject = ({ onAdd }) => {
     const enteredDescription = description.current.value;
     const enteredDueDate = dueDate.current.value;
 
-    // ....validation
+    if (
+      enteredTtile.trim() === "" ||
+      enteredDescription.trim() === "" ||
+      enteredDueDate.trim() === ""
+    ) {
+      // show a model
+    }
 
     onAdd({
       title: enteredTtile,

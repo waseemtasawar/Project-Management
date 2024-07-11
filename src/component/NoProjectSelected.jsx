@@ -12,7 +12,9 @@ const NoProjectSelected = ({ onStartAddProject }) => {
       <h2 className="text-xl font-bold text-stone-500 my-4">
         No Project Selected
       </h2>
-      <p>Select a project or get startted with a new one</p>
+      <p className="text-stone-400 mb-4">
+        Select a project or get startted with a new one
+      </p>
       <p>
         <Button onClick={onStartAddProject}>create New Project</Button>
       </p>
